@@ -9,5 +9,6 @@ percentage = bill * inDecimal
 addTipInBill = bill + percentage
 addTipInBill /= people
 addTipInBill = round(addTipInBill, 2)
+addTipInBill = "{:.2f}".format(addTipInBill)
 
 print(f"Each person should pay: ${addTipInBill}")
