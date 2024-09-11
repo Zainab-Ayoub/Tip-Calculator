@@ -1,1 +1,2 @@
-print("HELLO"[4])
+numChar = len(input("Hi!"))
+print(type(numChar))
