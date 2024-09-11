@@ -1,1 +1,1 @@
-type(number)
+input("What is your currect age? ")
