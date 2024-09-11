@@ -1,1 +1,1 @@
-input("What is your currect age? ")
+input("How many people to split the bill?")

@@ -1,15 +1,12 @@
-currentAge = int(input("What is your currect age? "))
+print("Welcome to the Tip Calculator!")
+bill = float(input("What was the total bill? $"))
+people = int(input("How many people to split the bill? "))
+inDecimal = int(input("What percentage tip would you like to give? 10, 12, 0r 15?"))
 
-daysInCurrentAge = currentAge * 365
-weeksInCurrentAge = currentAge * 52
-monthsInCurrentAge = currentAge * 12
+inDecimal /= 100
+percentage = bill * inDecimal 
+addTipInBill = bill + percentage
+addTipInBill /= people
+addTipInBill = round(addTipInBill, 2)
 
-daysInNinetyYears = 90 * 365
-weeksInNinetyYears = 90 * 52
-monthsInNinetyYears = 90 * 12
-
-daysLeft = daysInNinetyYears - daysInCurrentAge
-weeksLeft = weeksInNinetyYears - weeksInCurrentAge
-monthsLeft = monthsInNinetyYears - monthsInCurrentAge
-
-print(f"You have {daysLeft} days, {weeksLeft} weeks, and {monthsLeft} left.")
+print(f"Each person should pay: ${addTipInBill}")
